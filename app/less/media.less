@@ -1,0 +1,113 @@
+@media (min-width:1201px) { /* сетка 5 - 4 */
+
+  #hexGrid{
+      padding-bottom: 4.4%
+  }
+  .hex {
+      width: 20%; 
+  }
+  .hex:nth-child(9n+6){ 
+      margin-left:10%; 
+  }
+}
+
+@media (max-width: 1200px) and (min-width:901px) { /* сетка 4 - 3 */
+  #hexGrid{
+      padding-bottom: 5.5%
+  }
+  .hex {
+      width: 25%;
+  }
+  .hex:nth-child(7n+5){ 
+      margin-left:12.5%; 
+  }
+}
+@media (max-width:1190px) {
+    .head-nav {
+        display: none;
+        position: absolute;
+        top: 120px;
+        right: 20px;
+    }
+    .head-nav-list {
+        flex-direction: column;
+        align-items: flex-end;
+        padding: 15px;
+        box-sizing: border-box;
+        border-radius: 5px;
+        background-color: @black-light-link;
+    }
+    .head-nav-item {
+        margin: 0;
+    }
+    .burger-menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        cursor: pointer;
+    }
+}
+@media (max-width: 900px) and (min-width:601px) { /* сетка 3 - 2 */
+  #hexGrid{
+      padding-bottom: 7.4%
+  }
+  .hex {
+      width: 33.333%;
+  }
+  .hex:nth-child(5n+4){ 
+      margin-left:16.666%; 
+  }
+}
+@media (max-width: 650px) {
+    .head-nav {
+        top: 110px;
+    }
+    .head {
+        justify-content:space-between;
+        padding: 15px;
+        height: auto;
+    }
+    .head-brand {
+        display: none;
+    }
+    .head-title {
+        text-align: center;
+    }
+}
+@media (max-width: 600px) { /* сетка 2 - 1 */
+  #hexGrid{
+      padding-bottom: 11.2%
+  }
+  .hex {
+      width: 50%; 
+  }
+  .hex:nth-child(3n+3){
+      margin-left:25%;
+  }
+}
+@media (max-width: 500px) {
+    .head-nav {
+        top: 160px;
+    }
+    .head-title {
+        width: 250px;
+    }
+}
+@media (max-width: 450px) { /* сетка 2 - 1 */
+    .hexTitle {
+        font-size: 70%;
+      }
+  }
+
+  @media (max-width: 350px) { /* сетка 2 - 1 */
+    .head-title {
+        font-size: 20px;
+    }
+    .hexImage {
+        display: none;
+    }
+    .hexTitle {
+        margin: 4% 4% 0 4%;
+        font-size: 65%;
+    }
+  }
