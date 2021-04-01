@@ -27,9 +27,6 @@ body {
   &-info {
     position: relative;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
     max-width: 80%;
     max-height: 95%;
     padding: 40px 30px 30px 30px;
@@ -38,6 +35,9 @@ body {
     border-radius: 5px;
     background-color: @black-modal;
     overflow: hidden;
+    &-content {
+      width: 100%;
+    }
     &-close {
       display: flex;
       flex-direction: column;
@@ -412,6 +412,14 @@ body {
   }
 }
 
+.appDevelop {
+  display: block;
+  margin: 0;
+  text-align: center;
+  color: @white;
+  font-size: 24px;
+}
+
 @import "media.less";
 
 .head-nav-active {
@@ -420,4 +428,8 @@ body {
 
 .hexLink-active {
   background-color: @link-active;
+}
+
+.modal-info-hide {
+  display: none;
 }
